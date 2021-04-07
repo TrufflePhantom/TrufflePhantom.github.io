@@ -1,13 +1,295 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Revalia&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <script src="./libs/jquery-3.5.0.min.js"></script>
-    <script src="./src/index.js"></script>
+    <section class="header">
+      <div class="container">
+        <div class="header__box">
+          <a href="index.html" class="header__logo">
+            WD
+          </a>
+          <nav class="header__nav">
+            <a href="#" class="header__link">Главная</a>
+            <a href="#" class="header__link">Об авторе</a>
+            <a href="#" class="header__link">Работы</a>
+            <a href="#" class="header__link">Процесс</a>
+            <a href="#" class="header__link">Контакты</a>
+          </nav>
+          <div class="header__burger">
+            <img src="./img/burger.png" alt="" />
+          </div>
+        </div>
+        <div class="header__find_me">
+          <div class="header__find_me_img">
+            <img src="./img/Frame.svg" alt="" />
+          </div>
+          <div class="header__find_me_box">
+            <h1>Дизайн и верстка</h1>
+            <p>
+              Хотите создать веб-сайт? Тогда вам необходим именно я. Хотя лучше
+              обратиться к профессионалам. Если вы посмотрите весь сайт, то вы
+              сделаете правильные выводы))
+            </p>
+            <a href="#write" class="header__find_me_box_btn ">
+              Написать мне
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="introduction">
+      <div class="container">
+        <div class="introduction__me">
+          <h2>Обо мне</h2>
+          <p>
+            Непрофессионально занимаюсь созданием сайтов, ещё мал и глуп. За-то
+            имею большой опыт в военной сфере. Мои знания и навыки: HTML5 3 из
+            10, VS code история повтаряется. Bootstrap - минус; , JavaScript -
+            минус, jQuery - минус; WordPress - минус, SEO - вообще ни какого
+            отношения, Adobe Photoshop +- нормально)))
+          </p>
+        </div>
+      </div>
+      <div class="introduction__form">
+        <div class="introduction__form_box">
+          <img src="./img/item.svg" alt="" />
+          <div>
+            <h3>40+</h3>
+            <p>проектов</p>
+          </div>
+        </div>
+        <div class="introduction__form_box">
+          <img src="./img/item.svg" alt="" />
+          <div>
+            <h3>40+</h3>
+            <p>проектов</p>
+          </div>
+        </div>
+        <div class="introduction__form_box">
+          <img src="./img/item.svg" alt="" />
+          <div>
+            <h3>40+</h3>
+            <p>проектов</p>
+          </div>
+        </div>
+        <div class="introduction__form_box">
+          <img src="./img/item.svg" alt="" />
+          <div>
+            <h3>40+</h3>
+            <p>проектов</p>
+          </div>
+        </div>
+        <div class="introduction__form_box">
+          <img src="./img/item.svg" alt="" />
+          <div>
+            <h3>40+</h3>
+            <p>проектов</p>
+          </div>
+        </div>
+        <div class="introduction__form_box">
+          <img src="./img/item.svg" alt="" />
+          <div>
+            <h3>40+</h3>
+            <p>проектов</p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="introduction__work">
+          <div>
+            <h4>Мои навыки</h4>
+            <div>
+              <p>Строевая подготовка</p>
+              <div class="introduction__work_progress"></div>
+            </div>
+            <div>
+              <p>VS Code</p>
+              <div class="introduction__work_progress2"></div>
+            </div>
+            <div>
+              <p>Животноводство</p>
+              <div class="introduction__work_progress3"></div>
+            </div>
+          </div>
+          <div class="introduction__work_img">
+            <img src="./img/mi2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="preview">
+      <h5>Как я работаю</h5>
+      <p>
+        В основном сижу ночами, с фонариком под одеялом и пытаюсь сделать из
+        конфетки конфетку. Вот наглядный пример как делаю очередное чудо.
+      </p>
+      <div class="preview__video">
+        <iframe
+          src="https://www.youtube.com/embed/yCQPIKHn6Ys"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="gallery__item">
+        <div class="gallery__overlay">
+          <img class="gallery__overlay_img" src="./img/overlay.png" alt="" />
+        </div>
+        <img class="gallery__item_img" src="./img/Screenshot_1.jpg" alt="" />
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__overlay">
+          <img class="gallery__overlay_img" src="./img/overlay.png" alt="" />
+        </div>
+        <img class="gallery__item_img" src="./img/Screenshot_2.jpg" alt="" />
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__overlay">
+          <img class="gallery__overlay_img" src="./img/overlay.png" alt="" />
+        </div>
+        <img class="gallery__item_img" src="./img/Screenshot_3.jpg" alt="" />
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__overlay">
+          <img class="gallery__overlay_img" src="./img/overlay.png" alt="" />
+        </div>
+        <img class="gallery__item_img" src="./img/Screenshot_4.jpg" alt="" />
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__overlay">
+          <img class="gallery__overlay_img" src="./img/overlay.png" alt="" />
+        </div>
+        <img class="gallery__item_img" src="./img/Screenshot_3.jpg" alt="" />
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__overlay">
+          <img class="gallery__overlay_img" src="./img/overlay.png" alt="" />
+        </div>
+        <img class="gallery__item_img" src="./img/Screenshot_4.jpg" alt="" />
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__overlay">
+          <img class="gallery__overlay_img" src="./img/overlay.png" alt="" />
+        </div>
+        <img class="gallery__item_img" src="./img/Screenshot_2.jpg" alt="" />
+      </div>
+      <div class="gallery__item">
+        <div class="gallery__overlay">
+          <img class="gallery__overlay_img" src="./img/overlay.png" alt="" />
+        </div>
+        <img class="gallery__item_img" src="./img/Screenshot_1.jpg" alt="" />
+      </div>
+    </section>
+    <section class="instruments">
+      <div class="container">
+        <div class="instruments__nav">
+          <div>
+            <a
+              href="https://www.microsoft.com/ru-by"
+              class="instruments__nav_link"
+            >
+              <img src="./img/Rectangle 9.png" alt="" />
+            </a>
+          </div>
+          <div>
+            <a href="https://git-scm.com" class="instruments__nav_link">
+              <img src="./img/git.png" alt="" />
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://code.visualstudio.com"
+              class="instruments__nav_link"
+            >
+              <img src="./img/vscode.png" alt="" />
+            </a>
+          </div>
+          <div>
+            <a href="https://github.com" class="instruments__nav_link">
+              <img src="./img/github.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="write" class="write">
+      <div class="container">
+        <h6>Хотите веб-сайт?</h6>
+        <p>
+          Напишите мне и я вам отвечу, как только научусь. А так всех прошу в
+          SKILLUP, там всех научат и сделают сайт для вас.
+        </p>
+        <div class="write__form">
+          <div class="write__form_input">
+            <p>
+              <input
+                class="write__form_input_name"
+                type="text"
+                name="text"
+                placeholder="Ваше имя"
+              />
+            </p>
+            <p>
+              <input
+                class="write__form_input_name"
+                type="email"
+                name="email"
+                placeholder="Ваш e-mail"
+              />
+            </p>
+          </div>
+          <p>
+            <textarea
+              name="comment"
+              cols=""
+              rows=""
+              placeholder="Сообщение"
+            ></textarea>
+          </p>
+          <input type="submit" class="write__form_submit" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__name">
+        <h6>Дятлов Иван</h6>
+        <p>(с) 2021. Все права защищены.</p>
+      </div>
+      <div class="footer__link">
+        <div class="footer__link_vk">
+          <a href="https://vk.com/feed" class="instruments__nav_link">
+            <img src="./img/footer.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__link_vk">
+          <a href="https://vk.com/feed" class="instruments__nav_link">
+            <img src="./img/footer.svg" alt="" />
+          </a>
+        </div>
+        <div class="footer__link_vk">
+          <a href="https://vk.com/feed" class="instruments__nav_link">
+            <img src="./img/footer.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

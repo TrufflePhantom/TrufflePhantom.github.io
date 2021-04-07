@@ -1,0 +1,103 @@
+.header {
+  background: #eeeff1;
+  padding: 57px 0;
+  &__logo {
+    font-family: Revalia, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    color: #34547a;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: #000000;
+    text-transform: uppercase;
+  }
+  &__link:hover {
+    color: #34537aa8;
+    transition: 0.5s;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 42px;
+  }
+
+  &__burger {
+    max-width: 30px;
+    cursor: pointer;
+    display: none;
+    z-index: 3000;
+  }
+  @media screen and (max-width: 992px) {
+    &__nav {
+      display: none;
+      position: fixed;
+      background: #fff;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2000;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+
+  &__find_me {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 162px 0;
+    align-items: center;
+    @media screen and (max-width: 992px) {
+      display: grid;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+    }
+    &_box {
+      max-width: 540px;
+      text-align: justify;
+      h1 {
+        font-weight: 500;
+        font-size: 48px;
+        color: #000;
+      }
+      p {
+        padding: 50px 0;
+        line-height: 26px;
+      }
+
+      a {
+        color: #fff;
+        text-transform: uppercase;
+        background: #34547a;
+        padding: 20px;
+        cursor: pointer;
+        border: none;
+        &:hover {
+          background-color: #34537acc;
+          transition: 0.3s;
+        }
+      }
+
+      @media screen and (max-width: 992px) {
+        text-align: center;
+      }
+    }
+  }
+}
