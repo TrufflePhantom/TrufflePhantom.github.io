@@ -111,50 +111,16 @@
 // const result = stepForm();
 // console.log(stepForm());
 
-/*function calc(num1, num2, action) {
-  let result;
-  if (typeof num1 === "number" && typeof num2 === "number") {
-    switch (action) {
-      case "+":
-        result = num1 + num2;
-        break;
-      case "-":
-        result = num1 - num2;
-        break;
-      case "*":
-        result = num1 * num2;
-        break;
-      case "/":
-        result = num1 / num2;
-        break;
-      case "%":
-        result = (num1 / 100) * num2;
-        break;
-
-      default:
-        break;
-    }
-  } else {
-    result = "Неправильные входные данные";
-  }
-
-  return result;
-}
-let num1 = prompt("введите первое число");
-let num2 = prompt("введите второе число");
-console.log(calc(num1, num2, "+"));
-console.log(calc(num1, num2, "-"));
-console.log(calc(num1, num2, "*"));
-console.log(calc(num1, num2, "/"));
-console.log(calc(num1, num2, "%"));*/
-const calc = function () {
+const calc = function() {
   const num1 = Number(prompt("Введите первое число"));
   const num2 = Number(prompt("Введите второе число"));
   const action = prompt("Введите символ математической операции");
 
   console.log(num1);
+  console.log(num2);
+  console.log(action);
 
-  if (num1 !== NaN && num2 !== NaN) {
+  if (!isNaN(num1) && !isNaN(num2)) {
     switch (action) {
       case "+":
         alert(num1 + num2);
@@ -174,6 +140,8 @@ const calc = function () {
       default:
         alert("Введены неверные данные");
     }
+  } else {
+    alert("Введены неверные данные");
   }
 };
 
